@@ -1,0 +1,220 @@
+{
+	"info": {
+		"_postman_id": "7aee9498-e9eb-452d-a22a-5f477fad513a",
+		"name": "Samba Project",
+		"description": "GET and POST requests using the RESTful API built for the technical challenges.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add media",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 42,\n\t\"name\": \"Samba Tech\",\n\t\"url\": \"https://sambatech.com\",\n\t\"duration\": 1764\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/medias",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"medias"
+					]
+				},
+				"description": "Adding a media to the database. A string message \"Insert Successful\" will be returned"
+			},
+			"response": []
+		},
+		{
+			"name": "Add media",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 256,\n\t\"name\": \"Merrimack\",\n\t\"url\": \"https://merrimack.edu\",\n\t\"duration\": 67840\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/medias",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"medias"
+					]
+				},
+				"description": "Adding a media to the database. A string message \"Insert Successful\" will be returned"
+			},
+			"response": []
+		},
+		{
+			"name": "Add media",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 1939,\n\t\"name\": \"Turing\",\n\t\"url\": \"https://turing.org.uk\",\n\t\"duration\": 3759721\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/medias",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"medias"
+					]
+				},
+				"description": "Adding a media to the database. A string message \"Insert Successful\" will be returned"
+			},
+			"response": []
+		},
+		{
+			"name": "Return a specific media by ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/medias/42",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"medias",
+						"42"
+					]
+				},
+				"description": "A specific media will be returned based on its ID."
+			},
+			"response": []
+		},
+		{
+			"name": "Return a specific media by ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/medias/101",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"medias",
+						"101"
+					]
+				},
+				"description": "Example of the response when the media does not exist."
+			},
+			"response": []
+		},
+		{
+			"name": "Get all medias",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/medias",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"medias"
+					]
+				},
+				"description": "Get all the medias in the database."
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
