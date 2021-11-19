@@ -1,2 +1,2 @@
 # samba
-Samba Tech's selective process' problems.
+Samba Tech's hiring process' problems.
